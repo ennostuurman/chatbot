@@ -35,6 +35,7 @@ It supports multi-model AI routing, chat persistence, authentication, and local/
 - Typecheck (TypeScript): `pnpm typecheck`
 - Auto-fix lint/format issues: `pnpm fix`
 - Run e2e tests: `pnpm test`
+- Install git hooks: `pnpm prepare` (lefthook — runs `pnpm check` as a pre-commit hook)
 
 ### Database Commands
 
