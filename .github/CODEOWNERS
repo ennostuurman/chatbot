@@ -1,0 +1,5 @@
+# When you use GitHub branch protection with required reviewers, uncomment
+# and replace with your GitHub username or team slug, for example:
+#
+# * @your-org/your-team
+# /lib/db/ @your-org/backend

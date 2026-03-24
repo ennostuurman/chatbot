@@ -45,6 +45,14 @@ It supports multi-model AI routing, chat persistence, authentication, and local/
 - Validate schema: `pnpm db:check`
 - Open Drizzle Studio: `pnpm db:studio`
 
+## Agent readiness reports (Kodus)
+
+When you run `npx @kodus/agent-readiness .` or are asked to persist its output:
+
+- Save the **current** report to **`reports/agent-readiness-report.md`**, replacing the previous snapshot. Keep a short Markdown title, note the command and project path, and put the terminal output in a fenced code block so tables stay aligned.
+- If you need a **historical** copy (optional), also save a second file under `reports/` using **`agent-readiness-YYYYMMDD-HHMM.md`** (local time is fine).
+- Do not add new agent-readiness files at the repo root; keep them under **`reports/`**.
+
 ## Agent Do and Don't
 
 - Do make minimal, targeted changes that match existing patterns.
@@ -52,9 +60,11 @@ It supports multi-model AI routing, chat persistence, authentication, and local/
 - Do update docs when behavior, commands, or setup changes.
 - Do call out assumptions and potential risks in responses.
 - Do avoid touching unrelated files in a dirty working tree.
+- Do save Kodus agent-readiness output to **`reports/agent-readiness-report.md`** when refreshing that report (see above).
 
 - Don't commit secrets or modify `.env.local` values in commits.
 - Don't introduce new dependencies unless required and justified.
 - Don't refactor broadly when a scoped fix is sufficient.
 - Don't bypass lint/type/test failures without explanation.
 - Don't use destructive git commands (for example hard reset) unless explicitly requested.
+- Don't use ad-hoc filenames or repo-root paths for agent-readiness dumps; follow **`reports/agent-readiness-report.md`** (and optional dated archive under `reports/`).
