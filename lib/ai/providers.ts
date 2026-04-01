@@ -28,3 +28,7 @@ export function getTitleModel() {
   }
   return gateway.languageModel(titleModel.id);
 }
+
+export function getImageModel() {
+  return gateway.imageModel("openai/dall-e-3");
+}
