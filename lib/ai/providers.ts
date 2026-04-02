@@ -28,3 +28,10 @@ export function getTitleModel() {
   }
   return gateway.languageModel(titleModel.id);
 }
+
+// Default image model via Vercel AI Gateway.
+// Other supported models: "bfl/flux-2-pro", "google/imagen-4.0-generate"
+// Full list: https://vercel.com/ai-gateway/models
+export function getImageModel() {
+  return gateway.imageModel("openai/gpt-image-1");
+}
